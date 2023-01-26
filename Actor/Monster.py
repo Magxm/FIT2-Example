@@ -81,13 +81,13 @@ class Monster(Actor):
 
             super().draw(camera)
 
-            prevDrawLoc = drawLoc
-            for waypoint in self.path:
-                loc = Helper.TileToLocation(waypoint.tilePos)
-                nextDrawLoc = camera.getRelativeDrawPosition(loc)
-                if nextDrawLoc is not None:
-                    pyxel.line(prevDrawLoc.X, prevDrawLoc.Y,
-                               nextDrawLoc.X, nextDrawLoc.Y, 7)
-                    prevDrawLoc = nextDrawLoc
-                else:
-                    break
+            # prevDrawLoc = drawLoc
+            # for waypoint in self.path:
+            #     loc = Helper.TileToLocation(waypoint.tilePos)
+            #     nextDrawLoc = camera.getRelativeDrawPosition(loc)
+            #     if nextDrawLoc is not None:
+            #         pyxel.line(prevDrawLoc.X, prevDrawLoc.Y,
+            #                    nextDrawLoc.X, nextDrawLoc.Y, 7)
+            #         prevDrawLoc = nextDrawLoc
+            #     else:
+            #         break
