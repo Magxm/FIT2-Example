@@ -1,4 +1,3 @@
-from matplotlib.pyplot import draw
 from Vector2 import Vector2
 import pyxel
 
